@@ -1,0 +1,366 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA195BFB221C06700023E16C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA195BFA221C06700023E16C /* AppDelegate.m */; };
+		DA195BFE221C06700023E16C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA195BFD221C06700023E16C /* ViewController.m */; };
+		DA195C01221C06700023E16C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA195BFF221C06700023E16C /* Main.storyboard */; };
+		DA195C03221C06710023E16C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA195C02221C06710023E16C /* Assets.xcassets */; };
+		DA195C06221C06710023E16C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA195C04221C06710023E16C /* LaunchScreen.storyboard */; };
+		DA195C09221C06710023E16C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA195C08221C06710023E16C /* main.m */; };
+		DA195D5C221D24AA0023E16C /* JWStatusBarNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = DA195D5B221D24AA0023E16C /* JWStatusBarNotification.m */; };
+		DA195D5F221D24BC0023E16C /* JWStatusBarStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = DA195D5E221D24BC0023E16C /* JWStatusBarStyle.m */; };
+		DA195D62221D40E90023E16C /* JWStatusBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA195D61221D40E90023E16C /* JWStatusBarView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DA195BF6221C06700023E16C /* JWStatusBarNotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWStatusBarNotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA195BF9221C06700023E16C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DA195BFA221C06700023E16C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DA195BFC221C06700023E16C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DA195BFD221C06700023E16C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DA195C00221C06700023E16C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA195C02221C06710023E16C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA195C05221C06710023E16C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DA195C07221C06710023E16C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA195C08221C06710023E16C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DA195D5A221D24AA0023E16C /* JWStatusBarNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWStatusBarNotification.h; sourceTree = "<group>"; };
+		DA195D5B221D24AA0023E16C /* JWStatusBarNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWStatusBarNotification.m; sourceTree = "<group>"; };
+		DA195D5D221D24BC0023E16C /* JWStatusBarStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWStatusBarStyle.h; sourceTree = "<group>"; };
+		DA195D5E221D24BC0023E16C /* JWStatusBarStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWStatusBarStyle.m; sourceTree = "<group>"; };
+		DA195D60221D40E90023E16C /* JWStatusBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWStatusBarView.h; sourceTree = "<group>"; };
+		DA195D61221D40E90023E16C /* JWStatusBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWStatusBarView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA195BF3221C06700023E16C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA195BED221C06700023E16C = {
+			isa = PBXGroup;
+			children = (
+				DA195BF8221C06700023E16C /* JWStatusBarNotification */,
+				DA195BF7221C06700023E16C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA195BF7221C06700023E16C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA195BF6221C06700023E16C /* JWStatusBarNotification.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA195BF8221C06700023E16C /* JWStatusBarNotification */ = {
+			isa = PBXGroup;
+			children = (
+				DA195C0F221C06D80023E16C /* JWStatusBarNotification */,
+				DA195BF9221C06700023E16C /* AppDelegate.h */,
+				DA195BFA221C06700023E16C /* AppDelegate.m */,
+				DA195BFC221C06700023E16C /* ViewController.h */,
+				DA195BFD221C06700023E16C /* ViewController.m */,
+				DA195BFF221C06700023E16C /* Main.storyboard */,
+				DA195C02221C06710023E16C /* Assets.xcassets */,
+				DA195C04221C06710023E16C /* LaunchScreen.storyboard */,
+				DA195C07221C06710023E16C /* Info.plist */,
+				DA195C08221C06710023E16C /* main.m */,
+			);
+			path = JWStatusBarNotification;
+			sourceTree = "<group>";
+		};
+		DA195C0F221C06D80023E16C /* JWStatusBarNotification */ = {
+			isa = PBXGroup;
+			children = (
+				DA195D5A221D24AA0023E16C /* JWStatusBarNotification.h */,
+				DA195D5B221D24AA0023E16C /* JWStatusBarNotification.m */,
+				DA195D5D221D24BC0023E16C /* JWStatusBarStyle.h */,
+				DA195D5E221D24BC0023E16C /* JWStatusBarStyle.m */,
+				DA195D60221D40E90023E16C /* JWStatusBarView.h */,
+				DA195D61221D40E90023E16C /* JWStatusBarView.m */,
+			);
+			path = JWStatusBarNotification;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA195BF5221C06700023E16C /* JWStatusBarNotification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA195C0C221C06710023E16C /* Build configuration list for PBXNativeTarget "JWStatusBarNotification" */;
+			buildPhases = (
+				DA195BF2221C06700023E16C /* Sources */,
+				DA195BF3221C06700023E16C /* Frameworks */,
+				DA195BF4221C06700023E16C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JWStatusBarNotification;
+			productName = JWStatusBarNotification;
+			productReference = DA195BF6221C06700023E16C /* JWStatusBarNotification.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA195BEE221C06700023E16C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = wangjun;
+				TargetAttributes = {
+					DA195BF5221C06700023E16C = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = DA195BF1221C06700023E16C /* Build configuration list for PBXProject "JWStatusBarNotification" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA195BED221C06700023E16C;
+			productRefGroup = DA195BF7221C06700023E16C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA195BF5221C06700023E16C /* JWStatusBarNotification */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA195BF4221C06700023E16C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA195C06221C06710023E16C /* LaunchScreen.storyboard in Resources */,
+				DA195C03221C06710023E16C /* Assets.xcassets in Resources */,
+				DA195C01221C06700023E16C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA195BF2221C06700023E16C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA195BFE221C06700023E16C /* ViewController.m in Sources */,
+				DA195D5C221D24AA0023E16C /* JWStatusBarNotification.m in Sources */,
+				DA195D5F221D24BC0023E16C /* JWStatusBarStyle.m in Sources */,
+				DA195D62221D40E90023E16C /* JWStatusBarView.m in Sources */,
+				DA195C09221C06710023E16C /* main.m in Sources */,
+				DA195BFB221C06700023E16C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DA195BFF221C06700023E16C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA195C00221C06700023E16C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DA195C04221C06710023E16C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA195C05221C06710023E16C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA195C0A221C06710023E16C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DA195C0B221C06710023E16C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA195C0D221C06710023E16C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JWStatusBarNotification/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangjun.JWStatusBarNotification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA195C0E221C06710023E16C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JWStatusBarNotification/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangjun.JWStatusBarNotification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA195BF1221C06700023E16C /* Build configuration list for PBXProject "JWStatusBarNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA195C0A221C06710023E16C /* Debug */,
+				DA195C0B221C06710023E16C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA195C0C221C06710023E16C /* Build configuration list for PBXNativeTarget "JWStatusBarNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA195C0D221C06710023E16C /* Debug */,
+				DA195C0E221C06710023E16C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA195BEE221C06700023E16C /* Project object */;
+}
