@@ -49,6 +49,7 @@ NSString *const JWStatusBarStyleDefault = @"JWStatusBarStyleDefault";
     tempStyle.barAnimationType = self.barAnimationType;
     tempStyle.barPositionType = self.barPositionType;
     tempStyle.barEdgeInsets = self.barEdgeInsets;
+    tempStyle.barDismissTimeInterval = self.barDismissTimeInterval;
     
     return tempStyle;
 }

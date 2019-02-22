@@ -19,7 +19,6 @@ typedef void(^JWStatusBarDidSelected)(void);
 
 @interface JWStatusBarNotification : NSObject
 
-
 + (JWStatusBarNotification *)shareInstance;
 
 - (void)configStyle:(NSString *)identifier
@@ -27,11 +26,19 @@ typedef void(^JWStatusBarDidSelected)(void);
 
 - (void)show:(NSString *)message;
 
-- (void)show:(NSString *)message complete:(JWStatusBarDidSelected)complete;;
+- (void)show:(NSString *)message complete:(JWStatusBarDidSelected)complete;
 
 - (void)show:(NSString *)message identifier:(NSString *)identifier;
 
 - (void)show:(NSString *)message identifier:(NSString *)identifier complete:(JWStatusBarDidSelected)complete;
+
+- (void)showView:(UIView *)view;
+
+- (void)showView:(UIView *)view complete:(JWStatusBarDidSelected)complete;
+
+- (void)showView:(UIView *)view identifier:(NSString *)identifier;
+
+- (void)showView:(UIView *)view identifier:(NSString *)identifier complete:(JWStatusBarDidSelected)complete;
 
 - (void)dismiss;
 

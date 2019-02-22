@@ -24,7 +24,8 @@
     
     [[JWStatusBarNotification shareInstance] configStyle:@"style1" prepare:^JWStatusBarStyle *(JWStatusBarStyle * _Nonnull style) {
         style.barPositionType = JWStatusBarPositionTypeCoverStatusBar;
-        style.barAnimationType = JWStatusBarAnimationTypeDrop;
+        style.barAnimationType = JWStatusBarAnimationTypeBounce;
+        style.barEdgeInsets = UIEdgeInsetsMake(50, 0, 0, 0);
         
         return style;
     }];
@@ -37,9 +38,17 @@
 
 - (void)showMessage
 {
+    UIView *tempView = [UIView new];
+    tempView.backgroundColor = [UIColor greenColor];
+    tempView.frame = CGRectMake(0, 0, 200, 100);
+    
     [[JWStatusBarNotification shareInstance] show:@"测试展示" identifier:@"style1" complete:^{
         NSLog(@"点击了一下");
     }];
+    
+//    [[JWStatusBarNotification shareInstance] showView:tempView identifier:@"style1" complete:^{
+//        NSLog(@"点击了一下");
+//    }];
 }
 
 @end
