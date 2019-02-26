@@ -10,6 +10,25 @@
 
 #import "JWStatusBarView.h"
 
+@interface JWStatusBarHitWindow : UIWindow
+
+@property (nonatomic, assign) CGRect hitRect;
+
+@end
+
+@implementation JWStatusBarHitWindow
+
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
+{
+    if (CGRectContainsPoint(self.hitRect, point))
+    {
+        return [super hitTest:point withEvent:event];
+    }
+    return nil;
+}
+
+@end
+
 @interface JWStatusBarStyle (Default)
 
 + (NSArray *)allDefaultIdentifier;
@@ -21,7 +40,7 @@ static JWStatusBarNotification *statusBarNotification;
 
 @interface JWStatusBarNotification()
 
-@property (nonatomic, strong) UIWindow *overlayWindow;
+@property (nonatomic, strong) JWStatusBarHitWindow *overlayWindow;
 @property (nonatomic, strong) JWStatusBarView *topBarView;
 @property (nonatomic, strong) UIView *topCustomView;
 @property (nonatomic, strong) NSMutableDictionary *userStyles;
@@ -65,11 +84,11 @@ static JWStatusBarNotification *statusBarNotification;
     }
 }
 
-- (UIWindow *)overlayWindow
+- (JWStatusBarHitWindow *)overlayWindow
 {
     if (!_overlayWindow)
     {
-        self.overlayWindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        self.overlayWindow = [[JWStatusBarHitWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
         _overlayWindow.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         _overlayWindow.backgroundColor = [UIColor clearColor];
         _overlayWindow.userInteractionEnabled = YES;
@@ -244,6 +263,7 @@ static JWStatusBarNotification *statusBarNotification;
     self.topBarView.alpha = tempBeforeAlpha;
     [UIView animateWithDuration:0.5 delay:0.2 usingSpringWithDamping:tempDamping initialSpringVelocity:tempVelocity options:UIViewAnimationOptionCurveEaseInOut animations:^{
         self.topCustomView.frame = [self afterRectWithStyle:style];
+        self.overlayWindow.hitRect = self.topCustomView.frame;
         self.topCustomView.alpha = 1.0;
     } completion:^(BOOL finished) {
         [self dismissTimerRun];
@@ -275,6 +295,7 @@ static JWStatusBarNotification *statusBarNotification;
     self.topBarView.alpha = tempBeforeAlpha;
     [UIView animateWithDuration:0.5 delay:0.2 usingSpringWithDamping:tempDamping initialSpringVelocity:tempVelocity options:UIViewAnimationOptionCurveEaseInOut animations:^{
         self.topBarView.frame = [self afterRectWithStyle:style];
+        self.overlayWindow.hitRect = self.topBarView.frame;
         self.topBarView.alpha = 1.0;
     } completion:^(BOOL finished) {
         [self dismissTimerRun];
@@ -317,7 +338,7 @@ static JWStatusBarNotification *statusBarNotification;
     switch (style.barAnimationType) {
         case JWStatusBarAnimationTypeNone:
         {
-            
+            tempY = (self.topCustomView != nil) ? style.barEdgeInsets.top : tempY;
         }
             break;
         case JWStatusBarAnimationTypeDrop:
@@ -340,7 +361,7 @@ static JWStatusBarNotification *statusBarNotification;
             break;
         case JWStatusBarAnimationTypeFade:
         {
-            
+            tempY = (self.topCustomView != nil) ? style.barEdgeInsets.top : tempY;
         }
             break;
         case JWStatusBarAnimationTypeBounce:
